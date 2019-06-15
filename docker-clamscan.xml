@@ -20,7 +20,7 @@
   <DateInstalled>1560610915</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
-  <Description>This template is for the scanning of your unRAID server with clamav and clamscan</Description>
+  <Description>This template is for scanning your unRAID server with clamav and clamscan. To scan your server, just start the container. When it is finished, the container will stop and you can view the logs to see the results.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
