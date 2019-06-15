@@ -7,9 +7,9 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/80868-support-clamav/</Support>
   <Project>https://github.com/tquizzle/docker-clamscan</Project>
-  <Overview>This template is for the scanning of your unRAID server with clamav and clamscan</Overview>
+  <Overview>This template is for the scanning of your unRAID server with clamav and clamscan.  To scan your server, just start the container. When it is finished, the container will stop and you can view the logs to see the results.</Overview>
   <Category>Tools: Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/tquizzle/docker-clamscan</TemplateURL>
