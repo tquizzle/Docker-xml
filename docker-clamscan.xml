@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ClamAV</Name>
+  <Repository>tquinnelly/clamav</Repository>
+  <Registry>https://hub.docker.com/r/tquinnelly/clamav</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/tquizzle/docker-clamscan</Project>
+  <Overview>This template is for the scanning of your unRAID server with clamav and clamscan</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/tquizzle/docker-clamscan</TemplateURL>
+  <Icon>http://its.ucsc.edu/software/images/clam.png</Icon>
+  <ExtraParams/>
+  <PostArgs>-i</PostArgs>
+  <CPUset/>
+  <DateInstalled>1560610915</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <Description>This template is for the scanning of your unRAID server with clamav and clamscan</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/scan</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/clamav</HostDir>
+      <ContainerDir>/var/lib/clamav</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Folder to Scan" Target="/scan" Default="/path/to/scan" Mode="ro" Description="Container Path: /scan" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="ClamAV Signatures" Target="/var/lib/clamav" Default="/mnt/cache/appdata/clamav" Mode="rw" Description="Storage for freshclam updates" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/clamav</Config>
+</Container>
