@@ -19,7 +19,7 @@
   <CPUset/>
   <DateInstalled>1560610915</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AW3QC6BBYNC4G&source=url</DonateLink>
   <Description>This template is for scanning your unRAID server with clamav and clamscan. To scan your server, check the environment variable to set the scanned folder and just start the container. When it is finished, the container will stop and you can view the logs to see the results.</Description>
   <Networking>
     <Mode>bridge</Mode>
