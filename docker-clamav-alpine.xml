@@ -37,8 +37,21 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>GROUP_ID</Name>
+      <Mode/>
+    </Variable>
   <Environment/>
   <Labels/>
   <Config Name="Folder to Scan" Target="/scan" Default="/path/to/scan" Mode="ro" Description="Container Path: /scan" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="ClamAV Signatures" Target="/var/lib/clamav" Default="/mnt/cache/appdata/clamav" Mode="rw" Description="Storage for freshclam updates" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/clamav</Config>
+  <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 </Container>
