@@ -48,7 +48,7 @@
       <Name>GROUP_ID</Name>
       <Mode/>
     </Variable>
-  <Environment/>
+  </Environment>
   <Labels/>
   <Config Name="Folder to Scan" Target="/scan" Default="/path/to/scan" Mode="ro" Description="Container Path: /scan" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
   <Config Name="ClamAV Signatures" Target="/var/lib/clamav" Default="/mnt/cache/appdata/clamav" Mode="rw" Description="Storage for freshclam updates" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/clamav</Config>
