@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/ich777/docker-templates/master/ich777/images/avatar.jpg</Icon>
+  <Profile>
+    Just a guy who loves containers and unRAID!
+  </Profile>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <Twitter>https://twitter.com/tquizzle</Twitter>
+  <WebPage>https://travisq.com</WebPage>
+  <Forum></Forum>
+</Maintainer>
