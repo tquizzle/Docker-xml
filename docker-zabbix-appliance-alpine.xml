@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Zabbix-Appliance</Name>
+  <Repository/>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Zabbix is software that monitors numerous parameters of a network and the health and integrity of servers. Zabbix uses a flexible notification mechanism that allows users to configure e-mail based alerts for virtually any event. This allows a fast reaction to server problems. Zabbix offers excellent reporting and data visualization features based on the stored data. This makes Zabbix ideal for capacity planning.&#xD;
+&#xD;
+Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gateway, and Zabbix frontend based on Nginx web-server.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:88]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/HNGamingUK/unraid-docker-templates/master/zabbix-agent/images/Zabbix-Logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1608848137</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Zabbix is software that monitors numerous parameters of a network and the health and integrity of servers. Zabbix uses a flexible notification mechanism that allows users to configure e-mail based alerts for virtually any event. This allows a fast reaction to server problems. Zabbix offers excellent reporting and data visualization features based on the stored data. This makes Zabbix ideal for capacity planning.&#xD;
+&#xD;
+Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gateway, and Zabbix frontend based on Nginx web-server.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>88</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/zabbix/mysql</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/zabbix/mibs</HostDir>
+      <ContainerDir>/var/lib/zabbix/mibs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>Q's Zab</Value>
+      <Name>ZBX_SERVER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>America/Chicago</Value>
+      <Name>PHP_TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5</Value>
+      <Name>ZBX_STARTPOLLERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5</Value>
+      <Name>ZBX_STARTTRAPPERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>ZBX_STARTJAVAPOLLERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>ZBX_STARTVMWARECOLLECTORS</Name>
+      <Mode/>
+    </Variable>
+</Environment>
+  <Labels/>
+  <Config Name="NGINX Port" Target="80" Default="88" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">88</Config>
+  <Config Name="Zabbix Server Name" Target="ZBX_SERVER_NAME" Default="" Mode="" Description="You're Zabbix Server's name" Type="Variable" Display="always" Required="true" Mask="false">Q's Zab</Config>
+  <Config Name="Time Zone" Target="PHP_TZ" Default="" Mode="" Description="Your time zone" Type="Variable" Display="always" Required="true" Mask="false">America/Chicago</Config>
+  <Config Name="Zabbix Pollers" Target="ZBX_STARTPOLLERS" Default="5" Mode="" Description="How many pollers should we start?" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="Zabbix Trappers" Target="ZBX_STARTTRAPPERS" Default="5" Mode="" Description="How many trapper processes to start?" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="Zabbix Java Pollers" Target="ZBX_STARTJAVAPOLLERS" Default="5" Mode="" Description="How many Java pollers to start?" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Zabbix VMware Collectors" Target="ZBX_STARTVMWARECOLLECTORS" Default="0" Mode="" Description="How many VMware collectors should we start?" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="DB Location" Target="/var/lib/mysql" Default="/mnt/cache/appdata/zabbix/mysql" Mode="rw" Description="Database directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/zabbix/mysql</Config>
+  <Config Name="Mibs Location" Target="/var/lib/zabbix/mibs" Default="/mnt/cache/appdata/zabbix/mibs" Mode="rw" Description="Mibs directory" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/zabbix/mibs</Config>
+</Container>
