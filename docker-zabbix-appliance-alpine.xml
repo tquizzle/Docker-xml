@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Zabbix-Appliance</Name>
   <Repository/>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/zabbix/zabbix-appliance<Registry/>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
