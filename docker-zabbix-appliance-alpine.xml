@@ -54,7 +54,7 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
       <Mode/>
     </Variable>
     <Variable>
-      <Value>America/Chicago</Value>
+      <Value>UTC</Value>
       <Name>PHP_TZ</Name>
       <Mode/>
     </Variable>
