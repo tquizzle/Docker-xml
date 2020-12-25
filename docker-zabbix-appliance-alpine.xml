@@ -33,6 +33,11 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>10051</HostPort>
+        <ContainerPort>10051</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -81,6 +86,7 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
 </Environment>
   <Labels/>
   <Config Name="NGINX Port" Target="80" Default="88" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">88</Config>
+  <Config Name="Zabbix Port" Target="10051" Default="" Mode="tcp" Description="Container Port: 10050" Type="Port" Display="always" Required="false" Mask="false">10051</Config>
   <Config Name="Zabbix Server Name" Target="ZBX_SERVER_NAME" Default="" Mode="" Description="You're Zabbix Server's name" Type="Variable" Display="always" Required="true" Mask="false">Q's Zab</Config>
   <Config Name="Time Zone" Target="PHP_TZ" Default="" Mode="" Description="Your time zone" Type="Variable" Display="always" Required="true" Mask="false">America/Chicago</Config>
   <Config Name="Zabbix Pollers" Target="ZBX_STARTPOLLERS" Default="5" Mode="" Description="How many pollers should we start?" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
