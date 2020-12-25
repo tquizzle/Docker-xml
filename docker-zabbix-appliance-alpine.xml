@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Zabbix-Appliance</Name>
-  <Repository>zabbix/zabbix-appliance<Repository/>
+  <Repository>zabbix/zabbix-appliance:alpine-latest<Repository/>
   <Registry>https://hub.docker.com/r/zabbix/zabbix-appliance<Registry/>
   <Network>bridge</Network>
   <MyIP/>
