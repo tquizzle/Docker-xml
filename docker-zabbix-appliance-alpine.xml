@@ -49,7 +49,7 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
   <Data/>
   <Environment>
     <Variable>
-      <Value>Q's Zab</Value>
+      <Value>Zabbix Server</Value>
       <Name>ZBX_SERVER_NAME</Name>
       <Mode/>
     </Variable>
