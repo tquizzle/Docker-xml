@@ -46,7 +46,7 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
       <ContainerDir>/var/lib/zabbix/mibs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-  <Data/>
+  </Data>
   <Environment>
     <Variable>
       <Value>Q's Zab</Value>
