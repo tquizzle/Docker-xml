@@ -21,7 +21,7 @@ Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gate
   <CPUset/>
   <DateInstalled>1608848137</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <DonateLink>https://paypal.me/tquinnelly</DonateLink>
   <Description>Zabbix is software that monitors numerous parameters of a network and the health and integrity of servers. Zabbix uses a flexible notification mechanism that allows users to configure e-mail based alerts for virtually any event. This allows a fast reaction to server problems. Zabbix offers excellent reporting and data visualization features based on the stored data. This makes Zabbix ideal for capacity planning.&#xD;
 &#xD;
 Zabbix appliance contains MySQL database server, Zabbix server, Zabbix Java Gateway, and Zabbix frontend based on Nginx web-server.</Description>
