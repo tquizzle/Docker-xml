@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/114242-support-minecraft-server/</Support>
   <Project/>
   <Overview>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
 Version (Tag Name): We're talking about Java here *&#xD;
