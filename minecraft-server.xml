@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>minecraft</Name>
+  <Repository>itzg/minecraft-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/itzg/minecraft-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
+Version (Tag Name): We're talking about Java here *&#xD;
+Latest: Java16; java8: Java 8; java-openj9: OpenJava9 *&#xD;
+Parameters&#xD;
+TYPE = vanilla, forge, spigot, bukkit, etc... &#xD;
+MOTD = Message of the Day&#xD;
+DIFFICULTY = Valid values are: peaceful, easy, normal, and hard&#xD;
+OPS = By default, the players in OPS are added to the final ops.json file by the Minecraft server&#xD;
+SEED = If you want to create the Minecraft level with a specific seed, use SEED&#xD;
+MODE = creative, survival, adventure, spectator&#xD;
+MEMORY = "1G" by default, can be used to adjust both initial (Xms) and max (Xmx) memory heap settings of the JVM&#xD;
+LEVEL_TYPE = default, flat, largebiomes, amplified, customized&#xD;
+When using Flat or customized, you'll also need GENERATOR_SETTINGS *&#xD;
+RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
+* (Check the docs!)</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://maxcdn.icons8.com/Color/PNG/512/Gaming/minecraft_logo-512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1632870840</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
+Version (Tag Name): We're talking about Java here *&#xD;
+Latest: Java16; java8: Java 8; java-openj9: OpenJava9 *&#xD;
+Parameters&#xD;
+TYPE = vanilla, forge, spigot, bukkit, etc... &#xD;
+MOTD = Message of the Day&#xD;
+DIFFICULTY = Valid values are: peaceful, easy, normal, and hard&#xD;
+OPS = By default, the players in OPS are added to the final ops.json file by the Minecraft server&#xD;
+SEED = If you want to create the Minecraft level with a specific seed, use SEED&#xD;
+MODE = creative, survival, adventure, spectator&#xD;
+MEMORY = "1G" by default, can be used to adjust both initial (Xms) and max (Xmx) memory heap settings of the JVM&#xD;
+LEVEL_TYPE = default, flat, largebiomes, amplified, customized&#xD;
+When using Flat or customized, you'll also need GENERATOR_SETTINGS *&#xD;
+RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
+* (Check the docs!)</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MOTD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OPS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SEED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MODE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MEMORY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>VERSION</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Data" Target="/data" Default="/opt/minecraft" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Type" Target="TYPE" Default="vanilla" Mode="" Description="Container Variable: TYPE" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MOTD" Target="MOTD" Default="My Unraid Minecraft Server" Mode="" Description="Container Variable: MOTD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OPS" Target="OPS" Default="" Mode="" Description="Container Variable: OPS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Seed" Target="SEED" Default="" Mode="" Description="Container Variable: SEED" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Mode" Target="MODE" Default="survival" Mode="" Description="Container Variable: MODE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Memory" Target="MEMORY" Default="1G" Mode="" Description="Container Variable: MEMORY" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Minecraft Version" Target="VERSION" Default="1.17.1" Mode="" Description="Container Variable: VERSION" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
