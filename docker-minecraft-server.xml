@@ -9,8 +9,6 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/114242-support-minecraft-server/</Support>
   <Project/>
-  <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
   <Overview>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
 Version (Tag Name): We're talking about Java here *&#xD;
 Latest: Java16; java8: Java 8; java-openj9: OpenJava9 *&#xD;
@@ -33,7 +31,7 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1632870840</DateInstalled>
+  <DateInstalled>1632875418</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
@@ -53,23 +51,29 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
 * (Check the docs!)</Description>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>25565</HostPort>
+        <ContainerPort>25565</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/opt/minecraft</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>vanilla</Value>
       <Name>TYPE</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>My Unraid Minecraft Server</Value>
       <Name>MOTD</Name>
       <Mode/>
     </Variable>
@@ -84,28 +88,29 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>survival</Value>
       <Name>MODE</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>1G</Value>
       <Name>MEMORY</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value>1.17.1</Value>
       <Name>VERSION</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Data" Target="/data" Default="/opt/minecraft" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Type" Target="TYPE" Default="vanilla" Mode="" Description="Container Variable: TYPE" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="MOTD" Target="MOTD" Default="My Unraid Minecraft Server" Mode="" Description="Container Variable: MOTD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="/opt/minecraft" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false">/opt/minecraft</Config>
+  <Config Name="Type" Target="TYPE" Default="vanilla" Mode="" Description="Container Variable: TYPE" Type="Variable" Display="always" Required="true" Mask="false">vanilla</Config>
+  <Config Name="MOTD" Target="MOTD" Default="My Unraid Minecraft Server" Mode="" Description="Container Variable: MOTD" Type="Variable" Display="always" Required="false" Mask="false">My Unraid Minecraft Server</Config>
   <Config Name="OPS" Target="OPS" Default="" Mode="" Description="Container Variable: OPS" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Seed" Target="SEED" Default="" Mode="" Description="Container Variable: SEED" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Mode" Target="MODE" Default="survival" Mode="" Description="Container Variable: MODE" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Memory" Target="MEMORY" Default="1G" Mode="" Description="Container Variable: MEMORY" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Minecraft Version" Target="VERSION" Default="1.17.1" Mode="" Description="Container Variable: VERSION" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Mode" Target="MODE" Default="survival" Mode="" Description="Container Variable: MODE" Type="Variable" Display="always" Required="false" Mask="false">survival</Config>
+  <Config Name="Memory" Target="MEMORY" Default="1G" Mode="" Description="Container Variable: MEMORY" Type="Variable" Display="always" Required="false" Mask="false">1G</Config>
+  <Config Name="Minecraft Version" Target="VERSION" Default="1.17.1" Mode="" Description="Container Variable: VERSION" Type="Variable" Display="always" Required="false" Mask="false">1.17.1</Config>
+  <Config Name="Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port" Display="always" Required="false" Mask="false">25565</Config>
 </Container>
