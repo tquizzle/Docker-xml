@@ -31,7 +31,7 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1632875418</DateInstalled>
+  <DateInstalled>1632881197</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
@@ -102,6 +102,11 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
       <Name>VERSION</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>EULA</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Data" Target="/data" Default="/opt/minecraft" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false">/opt/minecraft</Config>
@@ -113,4 +118,5 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   <Config Name="Memory" Target="MEMORY" Default="1G" Mode="" Description="Container Variable: MEMORY" Type="Variable" Display="always" Required="false" Mask="false">1G</Config>
   <Config Name="Minecraft Version" Target="VERSION" Default="1.17.1" Mode="" Description="Container Variable: VERSION" Type="Variable" Display="always" Required="false" Mask="false">1.17.1</Config>
   <Config Name="Port" Target="25565" Default="25565" Mode="tcp" Description="Container Port: 25565" Type="Port" Display="always" Required="false" Mask="false">25565</Config>
+  <Config Name="EULA" Target="EULA" Default="" Mode="" Description="Container Variable: EULA" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
 </Container>
