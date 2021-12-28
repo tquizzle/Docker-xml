@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>adguard-exporter</Name>
+  <Repository>ebrianne/adguard-exporter:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/ebrianne/adguard-exporter</Project>
+  <Overview>AdGuard Exporter&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9617]/metrics</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/prometheus.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1640650762</DateInstalled>
+  <DonateText>If you like my work, buy me a beer.<DonateText/>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FMYAA6ZDFC4BE&source=url<DonateLink/>
+  <Description>AdGuard Exporter</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9617</HostPort>
+        <ContainerPort>9617</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>http</Value>
+      <Name>adguard_protocol</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10.0.1.22</Value>
+      <Name>adguard_hostname</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>tq</Value>
+      <Name>adguard_username</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>002580</Value>
+      <Name>adguard_password</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>88</Value>
+      <Name>adguard_port</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10s</Value>
+      <Name>interval</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10000</Value>
+      <Name>log_limit</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>9617</Value>
+      <Name>server_port</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port to expose metrics" Target="9617" Default="" Mode="tcp" Description="Port to expose metrics" Type="Port" Display="always" Required="true" Mask="false">9617</Config>
+  <Config Name="AdGuard Protocol" Target="adguard_protocol" Default="http" Mode="" Description="Container Variable: adguard_protocol" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="AdGuard Hostname" Target="adguard_hostname" Default="AdGuard IP" Mode="" Description="Container Variable: adguard_hostname" Type="Variable" Display="always" Required="false" Mask="false">10.0.1.22</Config>
+  <Config Name="AdGuard Username" Target="adguard_username" Default="" Mode="" Description="Container Variable: adguard_username" Type="Variable" Display="always" Required="false" Mask="false">tq</Config>
+  <Config Name="AdGuard Password" Target="adguard_password" Default="" Mode="" Description="Container Variable: adguard_password" Type="Variable" Display="always" Required="false" Mask="true">002580</Config>
+  <Config Name="AdGuard Port" Target="adguard_port" Default="" Mode="" Description="optional if adguard is not using port 80 (http)/443 (https)" Type="Variable" Display="always" Required="false" Mask="false">88</Config>
+  <Config Name="Interval" Target="interval" Default="30s" Mode="" Description="Container Variable: interval" Type="Variable" Display="always" Required="false" Mask="false">10s</Config>
+  <Config Name="Log Limit" Target="log_limit" Default="" Mode="" Description="Container Variable: log_limit" Type="Variable" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="Server Port" Target="server_port" Default="9617" Mode="" Description="Dumb, but required." Type="Variable" Display="always" Required="false" Mask="false">9617</Config>
+</Container>
