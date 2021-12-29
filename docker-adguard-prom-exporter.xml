@@ -12,13 +12,13 @@
   <Overview>AdGuard Exporter</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:9617]/metrics</WebUI>
-  <TemplateURL><TemplateURL/>
+  <TemplateURL></TemplateURL>
   <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/prometheus.png</Icon>
-  <ExtraParams><ExtraParams/>
-  <PostArgs><PostArgs/>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
   <DateInstalled>1640650762</DateInstalled>
-  <DonateText>If you like my work, buy me a beer.<DonateText/>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FMYAA6ZDFC4BE&source=url<DonateLink/>
+  <DonateText>If you like my work, buy me a beer.</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=FMYAA6ZDFC4BE&amp;source=url</DonateLink>
   <Description>AdGuard Exporter</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -30,7 +30,7 @@
       </Port>
     </Publish>
   </Networking>
-  <Data><Data/>
+  <Data></Data>
   <Environment>
     <Variable>
       <Value>http</Value>
