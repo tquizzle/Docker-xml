@@ -73,7 +73,7 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Labels><Labels/>
+  <Labels></Labels>
   <Config Name="Port to expose metrics" Target="9617" Default="" Mode="tcp" Description="Port to expose metrics" Type="Port" Display="always" Required="true" Mask="false">9617</Config>
   <Config Name="AdGuard Protocol" Target="adguard_protocol" Default="http" Mode="" Description="Container Variable: adguard_protocol" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
   <Config Name="AdGuard Hostname" Target="adguard_hostname" Default="AdGuard IP" Mode="" Description="Container Variable: adguard_hostname" Type="Variable" Display="always" Required="false" Mask="false">10.0.1.22</Config>
