@@ -9,8 +9,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/ebrianne/adguard-exporter</Project>
-  <Overview>AdGuard Exporter&#xD;
-</Overview>
+  <Overview>AdGuard Exporter</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:9617]/metrics</WebUI>
   <TemplateURL/>
@@ -21,8 +20,7 @@
   <DateInstalled>1640818867</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>AdGuard Exporter&#xD;
-</Description>
+  <Description>AdGuard Exporter</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
