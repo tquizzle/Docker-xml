@@ -2,14 +2,14 @@
 <Container version="2">
   <Name>adguard-exporter</Name>
   <Repository>ebrianne/adguard-exporter:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/ebrianne/adguard-exporter</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/ebrianne/adguard-exporter</Project>
-  <Overview>AdGuard Exporter</Overview>
+  <Overview>Docker AdGuard Exporter for Prometheus.</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:9617]/metrics</WebUI>
   <TemplateURL/>
