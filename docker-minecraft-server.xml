@@ -61,7 +61,7 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/opt/minecraft</HostDir>
+      <HostDir>/mnt/user/appdata/minecraft</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -109,7 +109,7 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Data" Target="/data" Default="/opt/minecraft" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false">/opt/minecraft</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Your Minecraft data directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/minecraft</Config>
   <Config Name="Type" Target="TYPE" Default="vanilla" Mode="" Description="Container Variable: TYPE" Type="Variable" Display="always" Required="true" Mask="false">vanilla</Config>
   <Config Name="MOTD" Target="MOTD" Default="My Unraid Minecraft Server" Mode="" Description="Container Variable: MOTD" Type="Variable" Display="always" Required="false" Mask="false">My Unraid Minecraft Server</Config>
   <Config Name="OPS" Target="OPS" Default="" Mode="" Description="Container Variable: OPS" Type="Variable" Display="always" Required="false" Mask="false"/>
