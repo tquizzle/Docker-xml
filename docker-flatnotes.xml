@@ -3,6 +3,8 @@
   <Name>flatnotes</Name>
   <Repository>dullage/flatnotes:latest</Repository>
   <Registry/>
+  <Support>https://forums.unraid.net/topic/138851-support-flatnotes/</Support>
+  <Project>https://github.com/Dullage/flatnotes</Project>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
