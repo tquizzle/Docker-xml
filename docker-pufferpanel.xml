@@ -1,18 +1,16 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>baserow</Name>
-  <Repository>baserow/baserow</Repository>
-  <Registry>https://gitlab.com/baserow/baserow</Registry>
-  <Support>https://forums.unraid.net/topic/138859-support-baserow/</Support>
-  <Project>https://baserow.io</Project>
+  <Name>PufferPanel</Name>
+  <Repository></Repository>
+  <Registry></Registry>
+  <Support></Support>
+  <Project>https://www.pufferpanel.com/</Project>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
-  <Overview>Baserow is an open source no-code database and Airtable alternative. Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.</Overview>
-  <Category>Productivity</Category>
+  <Overview>PufferPanel is an open source game server management panel designed to be easy to use and easy to install. PufferPanel supports Minecraft, Forge, Spigot, Sponge, Source Dedicated Servers, BungeeCord, PocketMine, Forge, and much more.</Overview>
+  <Category>Game Servers</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://gitlab.com/baserow/baserow/-/raw/develop/deploy/cloudron/logo.png</Icon>
@@ -23,7 +21,9 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Data" Target="/baserow/data" Default="/mnt/user/appdata/baserow" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baserow</Config>
-  <Config Name="URL" Target="BASEROW_PUBLIC_URL" Default="http://url:port" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://your.url.here:PORT</Config>
+  <Config Name="Data" Target="/etc/pufferpanel" Default="/mnt/user/appdata/pufferpanel/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/data</Config>
+  <Config Name="Lib" Target="/var/lib/pufferpanel" Default="/mnt/user/appdata/pufferpanel/var/lib" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/var/lib</Config>
+  <Config Name="Docker SOCK" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="" Target="5657" Default="5657" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5657</Config>
 </Container>
