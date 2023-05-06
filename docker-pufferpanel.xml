@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>baserow</Name>
+  <Repository>baserow/baserow</Repository>
+  <Registry>https://gitlab.com/baserow/baserow</Registry>
+  <Support>https://forums.unraid.net/topic/138859-support-baserow/</Support>
+  <Project>https://baserow.io</Project>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Baserow is an open source no-code database and Airtable alternative. Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.</Overview>
+  <Category>Productivity</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://gitlab.com/baserow/baserow/-/raw/develop/deploy/cloudron/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683372400</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Data" Target="/baserow/data" Default="/mnt/user/appdata/baserow" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baserow</Config>
+  <Config Name="URL" Target="BASEROW_PUBLIC_URL" Default="http://url:port" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://your.url.here:PORT</Config>
+  <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
