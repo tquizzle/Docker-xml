@@ -2,8 +2,8 @@
 <Container version="2">
   <Name>PufferPanel</Name>
   <Repository></Repository>
-  <Registry></Registry>
-  <Support></Support>
+  <Registry>https://hub.docker.com/r/pufferpanel/pufferpanel</Registry>
+  <Support>https://forums.unraid.net/topic/138869-support-pufferpanel/</Support>
   <Project>https://www.pufferpanel.com/</Project>
   <Network>bridge</Network>
   <MyIP/>
