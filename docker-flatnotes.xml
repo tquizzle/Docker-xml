@@ -9,8 +9,6 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
   <Overview>A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.</Overview>
   <Category>Productivity</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
