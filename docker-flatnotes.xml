@@ -14,7 +14,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/Dullage/flatnotes/raw/master/docs/logo.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/flatnotes.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
