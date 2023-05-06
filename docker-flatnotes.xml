@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>flatnotes</Name>
+  <Repository>dullage/flatnotes:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/Dullage/flatnotes/raw/master/docs/logo.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683372400</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <Requires/>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/flatnotes" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flatnotes</Config>
+  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Group ID" Target="GUID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Auth Type" Target="FLATNOTES_AUTH_TYPE" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Username" Target="FLATNOTES_USERNAME" Default="user" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
+  <Config Name="Password" Target="FLATNOTES_PASSWORD" Default="changeMe!" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">changeMe!</Config>
+  <Config Name="Secret Key" Target="FLATNOTES_SECRET_KEY" Default="aLongRandomSeriesOfCharacters" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">aLongRandomSeriesOfCharacters</Config>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
