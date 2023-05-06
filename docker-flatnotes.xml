@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>flatnotes</Name>
-  <Repository>dullage/flatnotes:latest</Repository>
-  <Registry/>
+  <Repository>dullage/flatnotes</Repository>
+  <Registry>https://hub.docker.com/r/dullage/flatnotes</Registry>
   <Support>https://forums.unraid.net/topic/138851-support-flatnotes/</Support>
   <Project>https://github.com/Dullage/flatnotes</Project>
   <Network>bridge</Network>
@@ -11,7 +11,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project/>
-  <Overview>A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.&#xD;</Overview>
+  <Overview>A self-hosted, database-less note taking web app that utilises a flat folder of markdown files for storage.</Overview>
   <Category>Productivity</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -20,8 +20,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683372400</DateInstalled>
-  <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/flatnotes" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flatnotes</Config>
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
