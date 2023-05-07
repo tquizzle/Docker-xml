@@ -13,7 +13,7 @@
   <Category>Game Servers</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/pufferpanel.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/pufferpanel.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

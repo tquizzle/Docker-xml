@@ -24,6 +24,6 @@
   <DonateLink/>
   <Requires/>
   <Config Name="Data" Target="/baserow/data" Default="/mnt/user/appdata/baserow" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baserow</Config>
-  <Config Name="URL" Target="BASEROW_PUBLIC_URL" Default="http://url:port" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://your.url.here:PORT</Config>
+  <Config Name="URL" Target="BASEROW_PUBLIC_URL" Default="http://url:port" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://url:PORT</Config>
   <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
 </Container>
