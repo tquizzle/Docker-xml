@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Matchering</Name>
+  <Repository>sergree/matchering-web</Repository>
+  <Registry>https://hub.docker.com/r/sergree/matchering-web</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/138925-support-matchering/</Support>
+  <Project>https://pypi.org/project/matchering/</Project>
+  <Overview>Matchering 2.0 is a novel Containerized Web Application and Python Library for audio matching and mastering.&#xD;
+&#xD;
+It follows a simple idea - you take TWO audio files and feed them into Matchering:&#xD;
+&#xD;
+TARGET (the track you want to master, you want it to sound like the reference)&#xD;
+REFERENCE (another track, like some kind of "wet" popular song, you want your target to sound like it)&#xD;
+Our algorithm matches both of these tracks and provides you the mastered TARGET track with the same RMS, FR, peak amplitude and stereo width as the REFERENCE track has.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8360]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683493945</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/mgw-data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mgw-data</Config>
+  <Config Name="WebUI" Target="8360" Default="8360" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8360</Config>
+</Container>
