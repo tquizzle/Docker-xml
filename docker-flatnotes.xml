@@ -13,7 +13,7 @@
   <Category>Productivity</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/flatnotes.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/flatnotes.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
