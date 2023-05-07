@@ -13,7 +13,7 @@
   <Project/>
   <Overview>Baserow is an open source no-code database and Airtable alternative. Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.</Overview>
   <Category>Productivity</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://gitlab.com/baserow/baserow/-/raw/develop/deploy/cloudron/logo.png</Icon>
   <ExtraParams/>
