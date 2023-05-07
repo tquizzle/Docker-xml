@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TiddlyWiki5</Name>
+  <Repository>mazzolino/tiddlywiki</Repository>
+  <Registry>https://hub.docker.com/r/mazzolino/tiddlywiki</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/138922-support-tiddlywiki5/</Support>
+  <Project>https://tiddlywiki.com/</Project>
+  <Overview>Welcome to TiddlyWiki, a non-linear personal web notebook that anyone can use and keep forever, independently of any corporation.&#xD;
+&#xD;
+TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.&#xD;
+&#xD;
+Learn more and see it in action at https://tiddlywiki.com/&#xD;
+&#xD;
+Developer documentation is in progress at https://tiddlywiki.com/dev/</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/tiddlywiki.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683488068</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Wiki Data" Target="/var/lib/tiddlywiki" Default="/mnt/user/appdata/tiddlywiki" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tiddlywiki</Config>
+  <Config Name="Username" Target="USERNAME" Default="user" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
+  <Config Name="Password" Target="PASSWORD" Default="wiki" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">wiki</Config>
+  <Config Name="WebUI" Target="8080" Default="80080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
