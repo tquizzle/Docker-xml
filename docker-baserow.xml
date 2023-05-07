@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>baserow</Name>
   <Repository>baserow/baserow</Repository>
-  <Registry>https://gitlab.com/baserow/baserow</Registry>
+  <Registry>https://hub.docker.com/r/baserow/baserow</Registry>
   <Support>https://forums.unraid.net/topic/138859-support-baserow/</Support>
   <Project>https://baserow.io</Project>
   <Network>bridge</Network>
@@ -13,7 +13,7 @@
   <Project/>
   <Overview>Baserow is an open source no-code database and Airtable alternative. Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.</Overview>
   <Category>Productivity</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://gitlab.com/baserow/baserow/-/raw/develop/deploy/cloudron/logo.png</Icon>
   <ExtraParams/>
