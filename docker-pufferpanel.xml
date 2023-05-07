@@ -24,6 +24,6 @@
   <Config Name="Data" Target="/etc/pufferpanel" Default="/mnt/user/appdata/pufferpanel/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/data</Config>
   <Config Name="Lib" Target="/var/lib/pufferpanel" Default="/mnt/user/appdata/pufferpanel/var/lib" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/var/lib</Config>
   <Config Name="Docker SOCK" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
-  <Config Name="WebUI" Target="80" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="" Target="5657" Default="5657" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5657</Config>
 </Container>
