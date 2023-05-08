@@ -19,7 +19,7 @@ Our algorithm matches both of these tracks and provides you the mastered TARGET 
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8360]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/matchering.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
