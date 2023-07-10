@@ -9,7 +9,12 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Overview>Baserow is an open source no-code database and Airtable alternative. Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.</Overview>
+  <Overview>Baserow is an open source no-code database and Airtable alternative. 
+  &#xD;
+  Create your own database without technical experience. Our user friendly no-code tool gives you the powers of a developer without leaving your browser.
+  &#xD;
+  Be sure to set the BASEROW_PUBLIC_URL to your public URL if you plan on using this over Cloudflare Tunnels.
+  </Overview>
   <Category>Productivity</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
