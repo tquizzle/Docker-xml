@@ -9,7 +9,15 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/80868-support-clamav/</Support>
   <Project>https://github.com/tquizzle/clamav-alpine</Project>
-  <Overview>This template is for scanning your unRAID server with clamav and clamscan. To scan your server, check the environment variable to set the scanned folder and just start the container. When it is finished, the container will stop and you can view the logs to see the results. </Overview>
+  <Overview>This template is for scanning your unRAID server with clamav and clamscan. To scan your server, check the environment variable to set the scanned folder and just start the container. When it is finished, the container will stop and you can view the logs to see the results. &#xD;
+&#xD;
+If you are having issues with permissions, you should adjust your User ID and Group ID below.&#xD;
+You might also need to change the permissions on the config folder.&#xD;
+You can do with with Docker Safe Permissions, using the built-in "NewPerms" commands, or a simple shell command.&#xD;
+1. In the GUI&#xD;
+2. newperms /mnt/cache/appdata/clamav&#xD;
+3. chmod -R u-x,go-rwx,go+u,ugo+X /mnt/cache/appdata/clamav &amp;amp;&amp;amp; chown -R nobody:users /mnt/cache/appdata/clamav&#xD;
+NOTE:Option 3 above are the commands that "newperms" runs in the bg.</Overview>
   <Category>Tools:Utilities Security: Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/tquizzle/clamav-alpine</TemplateURL>
