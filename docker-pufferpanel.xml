@@ -19,8 +19,8 @@ To get admin user, run `docker exec -it PufferPanel /pufferpanel/pufferpanel use
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683372400</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Data" Target="/etc/pufferpanel" Default="/mnt/user/appdata/pufferpanel/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/data</Config>
   <Config Name="Lib" Target="/var/lib/pufferpanel" Default="/mnt/user/appdata/pufferpanel/var/lib" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pufferpanel/var/lib</Config>

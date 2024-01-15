@@ -23,8 +23,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683372400</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Data" Target="/baserow/data" Default="/mnt/user/appdata/baserow" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/baserow</Config>
   <Config Name="URL" Target="BASEROW_PUBLIC_URL" Default="http://url:port" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://url:PORT</Config>

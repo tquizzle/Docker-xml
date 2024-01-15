@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683372400</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/flatnotes" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flatnotes</Config>
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>

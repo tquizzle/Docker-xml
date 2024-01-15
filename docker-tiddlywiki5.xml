@@ -24,8 +24,8 @@ Developer documentation is in progress at https://tiddlywiki.com/dev/</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683488068</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Wiki Data" Target="/var/lib/tiddlywiki" Default="/mnt/user/appdata/tiddlywiki" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tiddlywiki</Config>
   <Config Name="Username" Target="USERNAME" Default="user" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
