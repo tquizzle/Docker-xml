@@ -21,13 +21,13 @@ NOTE:Option 3 above are the commands that "newperms" runs in the bg.</Overview>
   <Category>Tools:Utilities Security: Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/tquizzle/clamav-alpine</TemplateURL>
-  <Icon>http://its.ucsc.edu/software/images/clam.png</Icon>
+  <Icon>https://github.com/tquizzle/clamav-alpine/blob/master/img/clamav.png</Icon>
   <ExtraParams/>
   <PostArgs>-i</PostArgs>
   <CPUset/>
   <DateInstalled>1560610915</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;amp;hosted_button_id=KK2S75LBHM6QC&amp;amp;source=url_id=JTSH886FD9UM6</DonateLink>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Description>This template is for scanning your unRAID server with clamav and clamscan. To scan your server, check the environment variable to set the scanned folder and just start the container. When it is finished, the container will stop and you can view the logs to see the results.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -40,7 +40,7 @@ NOTE:Option 3 above are the commands that "newperms" runs in the bg.</Overview>
       <Mode>ro</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/clamav</HostDir>
+      <HostDir>/mnt/user/appdata/clamav</HostDir>
       <ContainerDir>/var/lib/clamav</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -59,7 +59,7 @@ NOTE:Option 3 above are the commands that "newperms" runs in the bg.</Overview>
   </Environment>
   <Labels/>
   <Config Name="Folder to Scan" Target="/scan" Default="/path/to/scan" Mode="ro" Description="Container Path: /scan" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
-  <Config Name="ClamAV Signatures" Target="/var/lib/clamav" Default="/mnt/cache/appdata/clamav" Mode="rw" Description="Storage for freshclam updates" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/clamav</Config>
+  <Config Name="ClamAV Signatures" Target="/var/lib/clamav" Default="/mnt/user/appdata/clamav" Mode="rw" Description="Storage for freshclam updates" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clamav</Config>
   <Config Name="User ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 </Container>
