@@ -27,7 +27,7 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   <Category>GameServers:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://maxcdn.icons8.com/Color/PNG/512/Gaming/minecraft_logo-512.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/minecraft.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
