@@ -18,7 +18,7 @@
   <Category>Productivity</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://gitlab.com/baserow/baserow/-/raw/develop/deploy/cloudron/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/baserow.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
