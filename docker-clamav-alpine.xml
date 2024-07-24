@@ -21,8 +21,8 @@ NOTE:Option 3 above are the commands that "newperms" runs in the bg.</Overview>
   <Category>Tools:Utilities Security: Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/tquizzle/clamav-alpine</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/clamav.png</Icon>
-  <ExtraParams/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/clamav-alpine/master/img/clamav.png</Icon>
+  <ExtraParams>--user=99:100<ExtraParams/>
   <PostArgs>-i</PostArgs>
   <CPUset/>
   <DateInstalled>1560610915</DateInstalled>
