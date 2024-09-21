@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SideQuests</Name>
+  <Repository>need4swede/sidequests:latest</Repository>
+  <Registry>https://hub.docker.com/r/need4swede/sidequests</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/175572-support-sidequests/</Support>
+  <Project>https://github.com/need4swede/SideQuests</Project>
+  <Overview>SideQuests - Objective Tracker&#xD;
+&#xD;
+SideQuests provides an intuitive and mobile friendly web-interface for managing tasks and objectives.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/sidequests.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1726919820</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
+  <Requires/>
+  <Config Name="Instance" Target="/app/instance" Default="/mnt/user/appdata/sidequests" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/sidequests</Config>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="ADMIN_USERNAME" Target="ADMIN_USERNAME" Default="" Mode="" Description="Admin Username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ADMIN_PASSWORD" Target="ADMIN_PASSWORD" Default="" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Secret Key" Type="Variable" Display="always" Required="true" Mask="false">RANDOM_CHARACTERS</Config>  
+</Container>
