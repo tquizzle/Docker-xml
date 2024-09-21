@@ -16,7 +16,7 @@ The open-source server management software for SSH, VNC &amp;amp; RDP</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:6989]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tquizzle/clamav-alpine/master/img/nexterm.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/nexterm.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
