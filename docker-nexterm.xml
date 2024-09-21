@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nexterm</Name>
+  <Repository>germannewsmaker/nexterm:latest</Repository>
+  <Registry>https://hub.docker.com/r/germannewsmaker/nexterm</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://docs.nexterm.dev/</Project>
+  <Overview>Nexterm&#xD;
+Server management&#xD;
+&#xD;
+The open-source server management software for SSH, VNC &amp;amp; RDP</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6989]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/clamav-alpine/master/img/nexterm.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1726919820</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
+  <Requires/>
+  <Config Name="Config" Target="/app/data" Default="/mnt/user/appdata/nexterm" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/nexterm</Config>
+  <Config Name="WebUI" Target="6989" Default="6989" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6989</Config>
+</Container>
