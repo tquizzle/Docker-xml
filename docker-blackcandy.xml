@@ -1,34 +1,40 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>TiddlyWiki5</Name>
-  <Repository>mazzolino/tiddlywiki</Repository>
-  <Registry>https://hub.docker.com/r/mazzolino/tiddlywiki</Registry>
+  <Name>blackcandy</Name>
+  <Repository>ghcr.io/blackcandy-org/blackcandy:latest</Repository>
+  <Registry>https://ghcr.io/blackcandy-org/blackcandy</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/138922-support-tiddlywiki5/</Support>
-  <Project>https://tiddlywiki.com/</Project>
-  <Overview>Welcome to TiddlyWiki, a non-linear personal web notebook that anyone can use and keep forever, independently of any corporation.&#xD;
+  <Support>https://forums.unraid.net/topic/176514-support-blackcandy/</Support>
+  <Project>https://github.com/blackcandy-org/blackcandy</Project>
+  <Overview>Black Candy is a self-hosted music streaming server, your personal music center.&#xD;
 &#xD;
-TiddlyWiki is a complete interactive wiki in JavaScript. It can be used as a single HTML file in the browser or as a powerful Node.js application. It is highly customisable: the entire user interface is itself implemented in hackable WikiText.&#xD;
+****************&#xD;
+You must chown the application directory as this image runs as 1000:1000&#xD;
+mkdir /mnt/cache/appdata/blackcandy&#xD;
+chown 1000:1000 /mnt/cache/appdata/blackcandy -R&#xD;
+****************&#xD;
 &#xD;
-Learn more and see it in action at https://tiddlywiki.com/&#xD;
+Use the initial admin user to log in (email: admin@admin.com, password: foobar).&#xD;
 &#xD;
-Developer documentation is in progress at https://tiddlywiki.com/dev/</Overview>
-  <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+Black Candy mobile apps are available in the following app stores:&#xD;
+https://apps.apple.com/app/blackcandy/id6444304071&#xD;
+https://f-droid.org/packages/org.blackcandy.android/</Overview>
+  <Category>MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/tiddlywiki.png</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/blackcandy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1683488068</DateInstalled>
-  <DonateText>Buy me a coffee</DonateText>
-  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
+  <DateInstalled>1735253880</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
-  <Config Name="Wiki Data" Target="/var/lib/tiddlywiki" Default="/mnt/user/appdata/tiddlywiki" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tiddlywiki</Config>
-  <Config Name="Username" Target="USERNAME" Default="user" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
-  <Config Name="Password" Target="PASSWORD" Default="wiki" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">wiki</Config>
-  <Config Name="WebUI" Target="8080" Default="80080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Music Path" Target="/media_data" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="AppData" Target="/app/storage" Default="/mnt/cache/appdata/blackcandy" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/blackcandy</Config>
+  <Config Name="PORT" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="MEDIA_PATH" Target="MEDIA_PATH" Default="/media_data" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/media_data</Config>
 </Container>
