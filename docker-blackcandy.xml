@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/176514-support-blackcandy/</Support>
+  <Support>https://forums.unraid.net/topic/183464-support-blackcandy/</Support>
   <Project>https://github.com/blackcandy-org/blackcandy</Project>
   <Overview>Black Candy is a self-hosted music streaming server, your personal music center.&#xD;
 &#xD;
