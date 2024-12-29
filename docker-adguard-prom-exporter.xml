@@ -75,6 +75,8 @@
     </Variable>
   </Environment>
   <Labels/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Config Name="Port to expose metrics" Target="9617" Default="" Mode="tcp" Description="Container Port: 9617" Type="Port" Display="always" Required="false" Mask="false">9617</Config>
   <Config Name="adguard_protocol" Target="adguard_protocol" Default="http" Mode="" Description="Container Variable: adguard_protocol" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
   <Config Name="adguard_hostname" Target="adguard_hostname" Default="AdGuard IP" Mode="" Description="Container Variable: adguard_hostname" Type="Variable" Display="always" Required="false" Mask="false"></Config>

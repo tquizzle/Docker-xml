@@ -22,8 +22,8 @@ MySQL, PostgreSQL, MS SQL, Oracle, MongoDB, SQLite and others</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1728093253</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Data" Target="/root/.dbgate" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dbgate</Config>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>

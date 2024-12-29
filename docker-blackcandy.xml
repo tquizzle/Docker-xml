@@ -30,8 +30,8 @@ https://f-droid.org/packages/org.blackcandy.android/</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1735253880</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Music Path" Target="/media_data" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="AppData" Target="/app/storage" Default="/mnt/cache/appdata/blackcandy" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/blackcandy</Config>

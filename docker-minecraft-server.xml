@@ -32,8 +32,8 @@ RESOURCE_PACK and RESOURCE_PACK_SHA1&#xD;
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1632881197</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Description>Full Docs: https://github.com/itzg/docker-minecraft-server/blob/master/README.md&#xD;
 Version (Tag Name): We're talking about Java here *&#xD;
 Latest: Java16; java8: Java 8; java-openj9: OpenJava9 *&#xD;

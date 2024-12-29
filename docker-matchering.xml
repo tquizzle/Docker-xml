@@ -24,8 +24,8 @@ Our algorithm matches both of these tracks and provides you the mastered TARGET 
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1683493945</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/mgw-data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mgw-data</Config>
   <Config Name="WebUI" Target="8360" Default="8360" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8360</Config>
