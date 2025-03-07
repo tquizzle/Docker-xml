@@ -17,7 +17,7 @@ MySQL, PostgreSQL, MS SQL, Oracle, MongoDB, SQLite and others</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/blackcandy.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/dbgate.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
