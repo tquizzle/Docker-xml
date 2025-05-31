@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Purgarr</Name>
+  <Repository>ghcr.io/steveharsant/purgarr:latest</Repository>
+  <Registry>https://ghcr.io/steveharsant/purgarr:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/190738-support-purgarr/<Support/>
+  <Project>https://github.com/steveharsant/purgarr</Project>
+  <Overview>Purgarr is a lightweight companion to your Arr stack designed to keep your torrent queue clean and ready for high quality downloads.&#xD;
+&#xD;
+Features Include:&#xD;
+&#xD;
+Cleans your torrent client of media imported by Sonarr and Radarr.&#xD;
+Detects and removes stalled torrents.&#xD;
+Adds stalled torrents to Sonarr's and Radarr's blocklist.&#xD;
+Triggers a search to replace low quality torrents.</Overview>
+  <Category>MediaApp:Video MediaApp:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/purgarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1748680498</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PURGE_STALLED" Target="PURGE_STALLED" Default="True" Mode="" Description="True or False" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="PURGE_STALLED_INTERVAL" Target="" Default="300" Mode="" Description="PURGE_STALLED_INTERVAL in seconds" Type="Variable" Display="always" Required="false" Mask="false">300</Config>
+  <Config Name="PURGE_IMPORTED_INTERVAL" Target="PURGE_IMPORTED_INTERVAL" Default="600" Mode="" Description="Time in seconds between imported torrent purges&#9;" Type="Variable" Display="always" Required="false" Mask="false">600</Config>
+  <Config Name="DELETE_FILES" Target="DELETE_FILES" Default="True" Mode="" Description="Delete files from torrent clients download folder&#9;" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="QBIT_URL" Target="QBIT_URL" Default="http://url:port" Mode="" Description="IP address or hostname to QBittorent webUI&#9;" Type="Variable" Display="always" Required="true" Mask="false">http://</Config>
+  <Config Name="QBIT_USER" Target="QBIT_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="QBIT_PASSWORD" Target="QBIT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="SONARR_URL" Target="SONARR_URL" Default="" Mode="" Description="SONARR_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SONARR_API_KEY" Target="SONARR_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="RADARR_URL" Target="RADARR_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RADARR_API_KEY" Target="RADARR_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
