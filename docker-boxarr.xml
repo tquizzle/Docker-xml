@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Boxarr</Name>
+  <Repository>ghcr.io/iongpt/boxarr:latest</Repository>
+  <Registry>https://ghcr.io/iongpt/boxarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/193338-support-boxarr/</Support>
+  <Project>https://github.com/iongpt/boxarr</Project>
+  <Overview>Boxarr solves the problem of keeping your media library current with popular movies without manual intervention. It automatically tracks what's trending at the box office and ensures your Radarr library has the movies people actually want to watch.</Overview>
+  <Category>MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/51d5f13416c4f9713e5f1dd38ac99ed134712728/img/boxarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1757184132</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI" Target="8888" Default="8888" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/boxarr" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/boxarr</Config>
+  <Config Name="TimeZone" Target="TZ" Default="YOUR TIMEZONE" Mode="" Description="Optional" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <TailscaleStateDir/>
+</Container>
