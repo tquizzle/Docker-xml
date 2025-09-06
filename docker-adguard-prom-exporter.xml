@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/henrywhitaker3/adguard-exporter</Project>
-  <Overview>Docker AdGuard Exporter for Prometheus.</Overview>
+  <Overview>Docker AdGuard Exporter for Prometheus.&#xD;
+&#xD;
+Check here for all documentation: https://github.com/henrywhitaker3/adguard-exporter</Overview>
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:9618]/metrics</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/docker-adguard-prom-exporter.xml</TemplateURL>
@@ -18,7 +20,7 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1757123871</DateInstalled>
-  <DonateText/>
+  <DonateText>Buy me a coffee?<DonateText/>
   <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Port to expose metrics" Target="9618" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9618</Config>
