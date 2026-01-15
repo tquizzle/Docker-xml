@@ -20,7 +20,7 @@ Check here for all documentation: https://github.com/henrywhitaker3/adguard-expo
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1757123871</DateInstalled>
-  <DonateText>Buy me a coffee?<DonateText/>
+  <DonateText>Buy me a coffee?</DonateText>
   <DonateLink>https://ko-fi.com/tquinnelly</DonateLink>
   <Requires/>
   <Config Name="Port to expose metrics" Target="9618" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9618</Config>
