@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/190738-support-purgarr/<Support/>
+  <Support>https://forums.unraid.net/topic/190738-support-purgarr/</Support>
   <Project>https://github.com/steveharsant/purgarr</Project>
   <Overview>Purgarr is a lightweight companion to your Arr stack designed to keep your torrent queue clean and ready for high quality downloads.&#xD;
 &#xD;
