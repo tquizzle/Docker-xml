@@ -15,7 +15,7 @@
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:1867]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/tquizzle/Docker-xml/master/img/sportarr.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
